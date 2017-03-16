@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>{{ title }} - microblog</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<body>
+	<div class="container">
+		<div class="row">
+			<h1>Welcome to <b> What's in fridge? </b> </h1>
+			<h2>Enter what is in your fridge (comma seperated).</h2>
+		</div>
+		<form action="recipes" method="POST">
+			<div class="form-group">
+			<label for="ingredients">Ingredients</label>
+				<input type="text" class="form-control" id="ingredients" name="ingredients">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+</body>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,14 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+application: appscale-learn-160013
+
+handlers:
+- url: .*
+  script: main.app
+
+libraries:
+- name: jinja2
+  version: "2.6"
+- name: markupsafe
+  version: "0.15"

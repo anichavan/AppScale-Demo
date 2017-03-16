@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<title>Recipes</title>
+<body background="bgimage.jpg">
+<div class="container">
+	<div class="row">
+		<h2 class="text-center">We found {{count}} recipes for you.</h2>
+	</div>
+	<div class="row">
+		{% for d in data%}
+
+
+		<div class="col-lg-4" class="text-center">
+
+
+			<img src="{{d.image_url}}" alt="NO IMAGE" class="img img-thumbnail img-responsive" style="height:35%"/>
+			<a href="{{d.f2f_url}}" target="_blank"><h4>{{d.title}} by {{d.publisher}}</h4></a>
+
+		</div>
+
+
+		{% endfor %}
+	</div>
+	<a href="/"><button class="btn btn-info btn-block">Search new recipes</button></a>
+</div>
+</body>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
